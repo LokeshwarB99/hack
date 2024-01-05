@@ -1,0 +1,23 @@
+/* Your custom styles */
+.company-name {
+  font-size: 18px; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.motto {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.btn-full-black {
+  background-color: #000000; /* Full black */
+  color: #ffffff; /* White text */
+}
+
+.btn-outline-black {
+  border: 2px solid #000000; /* Black border */
+  color: #000000; /* Black text */
+}
+
+.buttons .btn {
+  margin-right: 10px; /* Adjust spacing between buttons */
+}

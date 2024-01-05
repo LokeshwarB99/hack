@@ -1,0 +1,162 @@
+/* Your custom styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.top-navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Sidebar Styles */
+.side-navbar {
+  margin-top: -50px;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  height: 100vh;
+}
+
+.side-navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-navbar ul li {
+  padding: 10px;
+}
+
+.side-navbar ul li a {
+   font-weight: 700;
+    color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.side-navbar ul li:hover {
+  background-color: #acacac;
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.cardcc {
+  border-radius: 10px;
+  margin-left: 35px;
+  text-align: center;
+  width: 80%;
+}
+
+.e img{
+  padding: 0;
+  width: 30%;
+}
+
+.graph-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.transactions-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.transactions-section h2 {
+  margin-bottom: 20px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Right Sidebar Styles */
+.right-navbar {
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.right-navbar ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.right-navbar ul li {
+  padding: 10px;
+}
+
+.right-navbar ul li a {
+  color: black;
+  font-weight: 700;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li img{
+    scale: .5;
+    
+}
+
+.f{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}

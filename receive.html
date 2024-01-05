@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive Page</title>
+    <link rel="stylesheet" href="styles/receive.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="receive-block">
+            <h1>Receive Payment</h1>
+            <div class="public-key">
+                <h2>Your Public Key</h2>
+                <p id="public-key-value">Random Characters</p>
+                <div id="timer">2:00</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // JavaScript logic for timer and public key randomization
+        let timerValue = 120; // 2 minutes in seconds
+
+        function updateTimer() {
+            const timerDisplay = document.getElementById('timer');
+
+            const minutes = Math.floor(timerValue / 60);
+            const seconds = timerValue % 60;
+            timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            timerValue--;
+
+            if (timerValue < 0) {
+                // Reset timer and update public key
+                timerValue = 120; // Reset timer to 2 minutes
+                document.getElementById('public-key-value').textContent = generateRandomKey(30);
+            }
+        }
+
+        function generateRandomKey(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let result = '';
+
+            for (let i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+
+            return result;
+        }
+
+        setInterval(updateTimer, 1000); // Update timer every second
+        document.getElementById('public-key-value').textContent = generateRandomKey(30); // Initial random key
+    </script>
+</body>
+
+</html>

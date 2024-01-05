@@ -1,0 +1,66 @@
+/* Your custom styles */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.main-section {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid-section {
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: white; /* Background color for the icon */
+  padding: 5px; /* Optional padding to adjust the icon's position */
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+}
+
+.main-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: white; /* Background color for the icon */
+  padding: 5px; /* Optional padding to adjust the icon's position */
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+}
+
+.user-profile,
+.otp-enabled,
+.remaining-time {
+  display: flex;
+  align-items: center;
+}
+
+.user-info,
+.otp-info,
+.time-info {
+  flex: 1;
+}
+
+.blue-text {
+  color: blue;
+}
+
+
+
+
